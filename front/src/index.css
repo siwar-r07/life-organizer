@@ -1,0 +1,424 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* ===== GLOBAL DARK THEME ===== */
+
+html.dark-mode,
+html.dark-mode body,
+html.dark-mode #root {
+  background: #111827 !important;
+  background-image: none !important;
+  color: #e5e7eb !important;
+  min-height: 100vh;
+}
+
+/* Override the AppLayout gradient and page backgrounds */
+html.dark-mode #root .bg-gradient-to-br,
+html.dark-mode #root .min-h-screen,
+html.dark-mode #root .bg-gray-50 {
+  background: #111827 !important;
+  background-image: none !important;
+}
+
+/* Cards, panels and sidebars */
+html.dark-mode #root .bg-white {
+  background: #1f2937 !important;
+  color: #e5e7eb !important;
+}
+
+html.dark-mode #root .bg-gray-100,
+html.dark-mode #root .bg-gray-200 {
+  background: #273449 !important;
+}
+
+/* Text */
+html.dark-mode #root .text-gray-800,
+html.dark-mode #root .text-gray-700,
+html.dark-mode #root .text-gray-600 {
+  color: #e5e7eb !important;
+}
+
+html.dark-mode #root .text-gray-500,
+html.dark-mode #root .text-gray-400 {
+  color: #a1a1aa !important;
+}
+
+/* Borders */
+html.dark-mode #root [class*="border-gray-"] {
+  border-color: #374151 !important;
+}
+
+/* Inputs */
+html.dark-mode #root input,
+html.dark-mode #root textarea,
+html.dark-mode #root select {
+  background-color: #1f2937 !important;
+  color: #f9fafb !important;
+  border-color: #4b5563 !important;
+}
+
+/* Pastel panels */
+html.dark-mode #root [class*="bg-purple-50"],
+html.dark-mode #root [class*="bg-purple-100"],
+html.dark-mode #root [class*="bg-pink-50"],
+html.dark-mode #root [class*="bg-blue-50"],
+html.dark-mode #root [class*="bg-yellow-50"] {
+  background: #302b43 !important;
+}
+
+/* ===== FIX TASK CONTENT IN DARK MODE ===== */
+
+/* Common light backgrounds used inside task items */
+html.dark-mode #root .bg-white,
+html.dark-mode #root .bg-gray-50,
+html.dark-mode #root .bg-gray-100 {
+  background-color: #1f2937 !important;
+  background-image: none !important;
+}
+
+/* Task titles and descriptions */
+html.dark-mode #root .text-black,
+html.dark-mode #root .text-gray-900,
+html.dark-mode #root .text-gray-800,
+html.dark-mode #root .text-gray-700,
+html.dark-mode #root .text-gray-600 {
+  color: #e5e7eb !important;
+}
+
+/* Secondary text */
+html.dark-mode #root .text-gray-500,
+html.dark-mode #root .text-gray-400 {
+  color: #9ca3af !important;
+}
+
+/* Task inputs and text fields */
+html.dark-mode #root input,
+html.dark-mode #root textarea,
+html.dark-mode #root select {
+  background-color: #273449 !important;
+  color: #f9fafb !important;
+  border-color: #4b5563 !important;
+}
+
+/* Checkboxes */
+html.dark-mode #root input[type="checkbox"] {
+  accent-color: #a78bfa;
+}
+
+/* Task borders and dividers */
+html.dark-mode #root [class*="border-gray-"] {
+  border-color: #374151 !important;
+}
+
+/* ===== TASKS PAGE: COMPLETE DARK MODE FIX ===== */
+
+/* Main task page */
+html.dark-mode #root .bg-\[\#f8f7fc\] {
+  background: #111827 !important;
+  color: #e5e7eb !important;
+}
+
+/* White and slate panels */
+html.dark-mode #root .bg-white,
+html.dark-mode #root .bg-slate-50,
+html.dark-mode #root .bg-slate-100,
+html.dark-mode #root .bg-slate-200 {
+  background-color: #1f2937 !important;
+  background-image: none !important;
+}
+
+/* Task rows */
+html.dark-mode #root .bg-violet-50\/60 {
+  background-color: #302b43 !important;
+}
+
+html.dark-mode #root [class*="border-slate-"],
+html.dark-mode #root [class*="border-white"] {
+  border-color: #374151 !important;
+}
+
+/* Main text */
+html.dark-mode #root .text-slate-800,
+html.dark-mode #root .text-slate-700,
+html.dark-mode #root .text-slate-600,
+html.dark-mode #root .text-slate-500 {
+  color: #e5e7eb !important;
+}
+
+/* Secondary text */
+html.dark-mode #root .text-slate-400 {
+  color: #9ca3af !important;
+}
+
+/* Priority labels keep their colors, but become darker */
+html.dark-mode #root .bg-emerald-50 {
+  background-color: #12372d !important;
+}
+html.dark-mode #root .text-emerald-700 {
+  color: #6ee7b7 !important;
+}
+html.dark-mode #root .bg-amber-50 {
+  background-color: #3b2e16 !important;
+}
+html.dark-mode #root .text-amber-700 {
+  color: #fcd34d !important;
+}
+html.dark-mode #root .bg-rose-50 {
+  background-color: #451f2a !important;
+}
+html.dark-mode #root .text-rose-700 {
+  color: #fda4af !important;
+}
+
+/* Inputs and dropdowns */
+html.dark-mode #root input,
+html.dark-mode #root select,
+html.dark-mode #root textarea {
+  background-color: #273449 !important;
+  color: #f9fafb !important;
+  border-color: #4b5563 !important;
+}
+
+html.dark-mode #root input::placeholder {
+  color: #9ca3af !important;
+}
+
+/* Keep selected filters and primary buttons purple */
+html.dark-mode #root .bg-violet-600 {
+  background-color: #7c3aed !important;
+  color: #ffffff !important;
+}
+
+/* Completed-task text */
+html.dark-mode #root .text-slate-400.line-through {
+  color: #9ca3af !important;
+}
+
+/* Fix note text visibility in dark mode */
+html.dark-mode #root textarea,
+html.dark-mode #root input {
+  color: #f9fafb !important;
+  caret-color: #f9fafb !important;
+}
+
+html.dark-mode #root textarea::placeholder,
+html.dark-mode #root input::placeholder {
+  color: #9ca3af !important;
+}
+
+/* Make saved note content readable */
+html.dark-mode #root .text-white {
+  color: #e5e7eb !important;
+}
+
+/* Notes page dark mode */
+html.dark-mode #root .dark-note-content {
+  color: #f3f4f6 !important;
+}
+
+html.dark-mode #root article h2.text-gray-800 {
+  color: #f9fafb !important;
+}
+
+
+html.dark-mode #root article .text-gray-500 {
+  color: #9ca3af !important;
+}
+
+/* ===== DASHBOARD NOTES: KEEP PASTELS IN DARK MODE ===== */
+
+/* Preserve each dashboard note's pastel background */
+html.dark-mode #root .bg-purple-50 {
+  background-color: #f3e8ff !important;
+}
+html.dark-mode #root .bg-pink-50 {
+  background-color: #fce7f3 !important;
+}
+html.dark-mode #root .bg-blue-50 {
+  background-color: #dbeafe !important;
+}
+html.dark-mode #root .bg-yellow-50 {
+  background-color: #fef9c3 !important;
+}
+html.dark-mode #root .bg-green-50 {
+  background-color: #dcfce7 !important;
+}
+html.dark-mode #root .bg-orange-50 {
+  background-color: #ffedd5 !important;
+}
+
+/* Keep note titles and saved text readable on pastel cards */
+html.dark-mode #root .bg-purple-50 h4,
+html.dark-mode #root .bg-pink-50 h4,
+html.dark-mode #root .bg-blue-50 h4,
+html.dark-mode #root .bg-yellow-50 h4,
+html.dark-mode #root .bg-green-50 h4,
+html.dark-mode #root .bg-orange-50 h4,
+html.dark-mode #root .bg-purple-50 .text-gray-600,
+html.dark-mode #root .bg-pink-50 .text-gray-600,
+html.dark-mode #root .bg-blue-50 .text-gray-600,
+html.dark-mode #root .bg-yellow-50 .text-gray-600,
+html.dark-mode #root .bg-green-50 .text-gray-600,
+html.dark-mode #root .bg-orange-50 .text-gray-600 {
+  color: #374151 !important;
+}
+
+/* Keep the note content area soft, not glaring white */
+html.dark-mode #root .bg-white\/70 {
+  background-color: rgba(255, 255, 255, 0.65) !important;
+}
+
+/* Notes page saved text */
+html.dark-mode #root article .dark-note-content {
+  color: #374151 !important;
+}
+/* Keep dashboard note text black in dark mode */
+html.dark-mode #root .dashboard-note-text {
+  color: #1f2937 !important;
+}
+/* Dashboard: note content editor in dark mode */
+html.dark-mode #root textarea {
+  background-color: #ffffff !important;
+  color: #1f2937 !important;
+  border-color: #e5e7eb !important;
+}
+
+/* Dashboard: saved note content area */
+html.dark-mode #root .bg-white\/70 {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+/* Make dashboard note titles black in dark mode */
+html.dark-mode #root .dashboard-note-card h4,
+html.dark-mode #root h4.text-gray-800 {
+  color: #1f2937 !important;
+}
+html.dark-mode #root .note-card-title {
+  color: #000000 !important;
+}
+/* Keep purple note cards pastel in Notes.jsx during dark mode */
+html.dark-mode #root article.bg-purple-100 {
+  background-color: #e9d5ff !important;
+  background-image: none !important;
+  border-color: #d8b4fe !important;
+}
+/* Keep the purple color option pastel in the Notes editor */
+html.dark-mode #root .bg-purple-100 {
+  background-color: #e9d5ff !important;
+  background-image: none !important;
+  border-color: #d8b4fe !important;
+}
+/* Notes.jsx: make edit and delete icons visible in dark mode */
+html.dark-mode #root article button svg {
+  color: #374151 !important;
+  stroke: #374151 !important;
+}
+/* Calendar: keep event colors pastel in dark mode */
+html.dark-mode #root .bg-purple-100 {
+  background-color: #e9d5ff !important;
+  border-color: #d8b4fe !important;
+}
+
+html.dark-mode #root .bg-pink-100 {
+  background-color: #fbcfe8 !important;
+  border-color: #f9a8d4 !important;
+}
+
+html.dark-mode #root .bg-blue-100 {
+  background-color: #bfdbfe !important;
+  border-color: #93c5fd !important;
+}
+
+html.dark-mode #root .bg-yellow-100,
+html.dark-mode #root .bg-amber-100 {
+  background-color: #fef3c7 !important;
+  border-color: #fcd34d !important;
+}
+/* Calendar event color picker — preserve pastel colors in dark mode */
+html.dark-mode #root .calendar-page .bg-purple-100 {
+  background-color: #f3e8ff !important;
+}
+
+html.dark-mode #root .calendar-page .bg-pink-100 {
+  background-color: #fce7f3 !important;
+}
+
+html.dark-mode #root .calendar-page .bg-blue-100 {
+  background-color: #dbeafe !important;
+}
+
+html.dark-mode #root .calendar-page .bg-amber-100 {
+  background-color: #fef3c7 !important;
+}
+
+/* Keep the event color labels readable */
+html.dark-mode #root .calendar-page .text-purple-700 {
+  color: #6b21a8 !important;
+}
+
+html.dark-mode #root .calendar-page .text-pink-700 {
+  color: #9d174d !important;
+}
+
+html.dark-mode #root .calendar-page .text-blue-700 {
+  color: #1d4ed8 !important;
+}
+
+html.dark-mode #root .calendar-page .text-emerald-700 {
+  color: #047857 !important;
+}
+
+html.dark-mode #root .calendar-page .text-amber-700 {
+  color: #92400e !important;
+}
+/* Calendar color picker: preserve original colors in dark mode */
+html.dark-mode #root .calendar-color-option.bg-purple-500 {
+  background-color: #a855f7 !important;
+}
+
+html.dark-mode #root .calendar-color-option.bg-pink-500 {
+  background-color: #ec4899 !important;
+}
+
+html.dark-mode #root .calendar-color-option.bg-blue-500 {
+  background-color: #3b82f6 !important;
+}
+
+html.dark-mode #root .calendar-color-option.bg-amber-500 {
+  background-color: #f59e0b !important;
+}
+
+html.dark-mode #root .calendar-color-option.bg-emerald-500 {
+  background-color: #10b981 !important;
+}
+/* Calendar event cards: keep selected pastel colors in dark mode */
+html.dark-mode #root .calendar-event-card.bg-purple-100 {
+  background-color: #f3e8ff !important;
+  border-color: #d8b4fe !important;
+}
+
+html.dark-mode #root .calendar-event-card.bg-pink-100 {
+  background-color: #fce7f3 !important;
+  border-color: #f9a8d4 !important;
+}
+
+html.dark-mode #root .calendar-event-card.bg-blue-100 {
+  background-color: #dbeafe !important;
+  border-color: #93c5fd !important;
+}
+
+html.dark-mode #root .calendar-event-card.bg-emerald-100 {
+  background-color: #d1fae5 !important;
+  border-color: #6ee7b7 !important;
+}
+
+html.dark-mode #root .calendar-event-card.bg-amber-100 {
+  background-color: #fef3c7 !important;
+  border-color: #fcd34d !important;
+}
+
+html.dark-mode #root .calendar-event-card h3,
+html.dark-mode #root .calendar-event-card p {
+  color: #1f2937 !important;
+}

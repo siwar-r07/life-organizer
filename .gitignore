@@ -1,0 +1,25 @@
+
+# Dependencies
+node_modules/
+front/node_modules/
+back/node_modules/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Build files
+dist/
+build/
+
+# Logs
+*.log
+
+# User uploads
+back/uploads/
+
+# Operating system
+.DS_Store
+Thumbs.db
+front-fresh/
