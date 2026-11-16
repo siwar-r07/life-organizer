@@ -16,6 +16,11 @@ Life Organizer provides a centralized platform for managing everyday activities 
 - **Profile Settings:** Update personal information, profile picture, and password.
 - **Dark & Light Mode:** Switch between different visual themes.
 
+## Screenshots
+
+### Dashboard
+
+![Life Organizer Dashboard](screenshots/dashboard.JPG)
 ## Technologies Used
 
 **Frontend**
