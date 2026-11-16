@@ -19,8 +19,22 @@ Life Organizer provides a centralized platform for managing everyday activities 
 ## Screenshots
 
 ### Dashboard
+![Dashboard](screenshots/dashboard.JPG)
 
-![Life Organizer Dashboard](screenshots/dashboard.JPG)
+### Tasks
+![Tasks](screenshots/tasks.JPG)
+
+### Calendar
+![Calendar](screenshots/calendar.JPG)
+
+### Notes
+![Notes](screenshots/notes.JPG)
+
+### Settings
+![Settings](screenshots/settings.JPG)
+
+### Login
+![Login](screenshots/login.JPG)
 ## Technologies Used
 
 **Frontend**
