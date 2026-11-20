@@ -266,16 +266,6 @@ function Login() {
           {showLoginPassword ? <EyeOff size={17} /> : <Eye size={17} />}
         </button>
       </div>
-
-      <label className="dw-check">
-        <input
-          type="checkbox"
-          checked={keepSignedIn}
-          onChange={(e) => setKeepSignedIn(e.target.checked)}
-        />
-        <span>Keep me signed in</span>
-      </label>
-
       {registerSuccess && (
         <Alert type="success" onClose={() => setRegisterSuccess("")}>
           {registerSuccess}
