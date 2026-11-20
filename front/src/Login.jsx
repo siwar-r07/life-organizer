@@ -205,15 +205,7 @@ function Login() {
       <p className="dw-eyebrow">Your day, your way</p>
       <h1 className="dw-title">Welcome back.</h1>
       <p className="dw-sub">A little clarity is just a sign-in away.</p>
-
-      <button type="button" className="dw-btn-outline" onClick={handleGoogle}>
-        Continue with Google
-      </button>
-
-      <div className="dw-divider">
-        <span>or sign in with email</span>
-      </div>
-
+    
       <label className="dw-label" htmlFor="login-email">
         Email address
       </label>
